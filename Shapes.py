@@ -2,6 +2,7 @@ import math
 # Base class.
 class Shape():
     def __init__(self):
+        # Initialization for each class prints that a new shape has been created.
         print("You created a shape!")
         
 # All classes below call upon the otherwise meaningless Shape class.        
@@ -25,7 +26,7 @@ class Circle(Shape):
         self.radius = new_radius
         self.perimeter = 2*math.pi*self.radius
         self.area = math.pi*(self.radius)**2
-        # The function rints the new dimensions, along with whether the resulting shape is a
+        # The function prints the new dimensions, along with whether the resulting shape is a
         # special version of the base shape.
         print(f"The radius is now {self.radius}.")
         
